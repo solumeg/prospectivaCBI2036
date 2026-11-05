@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#063d36">
+  <meta name="description" content="Prospectiva del Centro de Biotecnología Industrial - SENA Palmira: visión estratégica, capacidades, tendencias, formación, tecnología y complejo integrado de biotecnología.">
+  <meta property="og:title" content="Prospectiva Centro de Biotecnología Industrial - SENA Palmira">
+  <meta property="og:description" content="Visión, direccionadores, tendencias y hoja de ruta prospectiva para el CBI.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/talento-portada.png">
+  <title>Prospectiva Centro de Biotecnología Industrial - SENA Palmira</title>
+  <link rel="icon" href="assets/logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+  <style>
+    .metric-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:26px}
+    .metric-card{background:linear-gradient(180deg,#fff,#f8fbf9);border:1px solid var(--line);padding:22px;border-radius:20px;box-shadow:var(--shadow)}
+    .metric-card strong{font-size:2rem;display:block;line-height:1;color:var(--deep)}
+    .timeline{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:24px}
+    .timeline-item{position:relative;background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px 20px 20px;box-shadow:var(--shadow)}
+    .timeline-item::before{content:"";position:absolute;top:0;left:20px;height:5px;width:80px;background:linear-gradient(90deg,var(--green),var(--teal));border-radius:999px}
+    .quote-panel{background:linear-gradient(135deg,#083e37,#116454);color:#fff;border-radius:28px;padding:34px;box-shadow:var(--shadow)}
+    .quote-panel p{font-size:1.08rem;max-width:980px}
+    .chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+    .chip{background:#eaf6eb;color:#0f5132;border:1px solid #cfe9d2;padding:8px 14px;border-radius:999px;font-size:.95rem}
+    .cards-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+    .info-card{background:#fff;border:1px solid var(--line);padding:24px;border-radius:22px;box-shadow:var(--shadow)}
+    .info-card h3{margin-bottom:10px}
+    .trend-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .trend-item{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:var(--shadow)}
+    .trend-item .eyebrow{display:inline-block;font-size:.85rem;font-weight:700;color:var(--green);margin-bottom:8px}
+    table.matrix{width:100%;border-collapse:separate;border-spacing:0 12px}
+    table.matrix th{text-align:left;color:var(--muted);font-size:.92rem;padding:10px 12px}
+    table.matrix td{background:#fff;padding:16px 12px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    table.matrix td:first-child{border-left:1px solid var(--line);border-top-left-radius:16px;border-bottom-left-radius:16px;font-weight:700}
+    table.matrix td:last-child{border-right:1px solid var(--line);border-top-right-radius:16px;border-bottom-right-radius:16px}
+    .two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:start}
+    .checklist{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+    .checklist li{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px 16px 50px;position:relative;box-shadow:var(--shadow)}
+    .checklist li::before{content:"✓";position:absolute;left:18px;top:15px;height:22px;width:22px;border-radius:50%;display:grid;place-items:center;background:#eaf6eb;color:#1f7a3f;font-weight:800}
+    .source-box{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:linear-gradient(135deg,#f5fbf7,#eef7f2);border:1px solid var(--line);padding:24px;border-radius:22px}
+    .btn-inline{display:inline-flex;align-items:center;gap:8px;padding:12px 18px;border-radius:999px;background:var(--deep);color:#fff;text-decoration:none;font-weight:700}
+    .btn-inline.alt{background:#fff;color:var(--deep);border:1px solid var(--line)}
+    @media (max-width:900px){.two-col{grid-template-columns:1fr} table.matrix{display:block;overflow-x:auto;white-space:nowrap}}
+  </style>
+  <link rel="stylesheet" href="prospectiva.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-shell">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <img src="assets/logo.png" alt="Logo SENA Centro de Biotecnología Industrial Regional Valle">
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menú">☰</button>
+      <nav class="site-nav" id="site-navigation" aria-label="Navegación principal">
+        <a href="#antecedentes">Antecedentes</a>
+        <a href="#vision">Visión</a>
+        <a href="#direccionadores">Direccionadores</a>
+        <a href="#tendencias">Tendencias</a>
+        <a href="#proyeccion">Proyección</a>
+        <a href="#ruta">Ruta de avance</a>
+        <a href="#futuro">A futuro</a>
+        <a href="#memorias">Memorias</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-panel" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="section-kicker">SENA Palmira · Regional Valle</span>
+          <h1>Prospectiva Centro de Biotecnología Industrial - SENA Palmira</h1>
+          <p class="lead">Una visión de futuro que articula formación profesional integral, innovación, transferencia tecnológica y desarrollo productivo. El Centro de Biotecnología Industrial proyecta capacidades para responder a los desafíos de Palmira y el Valle del Cauca.</p>
+          <div class="hero-actions">
+            <a href="#vision" class="btn btn-primary">Explorar visión</a>
+            <a href="#proyeccion" class="btn btn-secondary">Ver proyección CBI</a>
+          </div>
+          <div class="chips">
+            <span class="chip">Prospectiva</span>
+            <span class="chip">Palmira 2050</span>
+            <span class="chip">CBI</span>
+            <span class="chip">Transformación productiva</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="art-orbit" aria-hidden="true"></div>
+          <figure class="hero-photo">
+            <img src="assets/talento-portada.png" alt="Aprendiz del Centro de Biotecnología Industrial" fetchpriority="high">
+          </figure>
+          <div class="hero-art-label">
+            <span class="label-icon" aria-hidden="true">✳</span>
+            <div><strong>Visión y territorio</strong><span>Talento · Tecnología · Futuro</span></div>
+          </div>
+          <span class="art-index" aria-hidden="true">CBI / PALMIRA</span>
+        </div>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
+    </section>
+
+    <section class="section-shell" id="antecedentes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Base documental</span>
+          <h2>Antecedentes que sustentan la prospectiva</h2>
+          <p>El ejercicio prospectivo integra la planeación tecnológica, la lectura del territorio y los estudios ocupacionales que orientan las oportunidades de desarrollo del Centro.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item"><h3>01</h3><p>Prospectiva sectorial de la Biotecnología Agroindustrial en el Valle del Cauca (2017–2018).</p></article><article class="timeline-item"><h3>02</h3><p>Plan Tecnológico del Centro de Biotecnología Industrial (2020–2030).</p></article><article class="timeline-item"><h3>03</h3><p>Prospectiva territorial SENA Regional Valle (2020–2030).</p></article><article class="timeline-item"><h3>04</h3><p>Estudio ocupacional de la biotecnología en Colombia (2023–2024).</p></article>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card"><strong>4</strong><span>direccionadores estratégicos del Centro</span></article>
+          <article class="metric-card"><strong>4</strong><span>antecedentes clave integrados en la propuesta prospectiva</span></article>
+          <article class="metric-card"><strong>2030</strong><span>horizonte explícito de la visión formulada</span></article>
+          <article class="metric-card"><strong>2026–2035</strong><span>ventana de tendencias que configuran la demanda</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell soft-section" id="vision">
+      <div class="container two-col">
+        <div>
+          <div class="section-heading">
+            <span class="section-kicker">Horizonte institucional</span>
+            <h2>Visión 2030 formulada</h2>
+            <p>La visión 2030 formulada en la Fase II – Etapa 6 integra pertinencia, eficiencia, tecnología, transferencia y responsabilidad social y ambiental.</p>
+          </div>
+          <div class="quote-panel">
+            <p>En el 2030 el Centro de Biotecnología Industrial será reconocido por su alta pertinencia y eficiencia en los procesos misionales, que responden a las necesidades de los sectores productivos de su zona de influencia, impactando los índices de competitividad e impulsando el desarrollo económico de la región, implementando tecnologías digitales para la automatización de procesos y facilitando la transferencia de tecnología a los diferentes sectores empresariales y productivos, brindando servicios a la medida de las necesidades de los grupos de valor y grupos de interés, fortaleciendo las habilidades socioemocionales, tecnológicas, pedagógicas y las competencias del talento humano del Centro, así como la infraestructura física y tecnológica disponible con responsabilidad social y ambiental.</p>
+          </div>
+        </div>
+        <aside class="info-card">
+          <img src="assets/talento-perfil.png" alt="Aprendiz del CBI en postura institucional" style="width:100%;border-radius:18px;margin-bottom:18px;">
+          <h3>Claves de la visión</h3>
+          <ul class="checklist">
+            <li>Pertinencia frente a necesidades del entorno productivo.</li>
+            <li>Impacto en competitividad y desarrollo económico regional.</li>
+            <li>Transformación digital y automatización de procesos.</li>
+            <li>Servicios a la medida para grupos de valor e interés.</li>
+            <li>Fortalecimiento del talento humano y la infraestructura.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-shell" id="direccionadores">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Dirección estratégica</span>
+          <h2>Direccionadores del CBI</h2>
+          <p>La prospectiva organiza la apuesta institucional alrededor de ejes que conectan el mundo del trabajo, la tecnología, el territorio y la sostenibilidad.</p>
+        </div>
+        <div class="cards-grid">
+          <article class="info-card area-card"><h3>Biotecnología</h3><p>Consolida la apuesta diferencial del Centro alrededor de bioprocesos, bioeconomía, servicios tecnológicos, transferencia de conocimiento e innovación aplicada al entorno productivo.</p></article><article class="info-card area-card"><h3>Seguridad alimentaria</h3><p>Aborda el derecho al acceso, la disponibilidad, la calidad, la inocuidad y el consumo responsable, articulando ciencia, tecnología y sostenibilidad en las cadenas alimentarias.</p></article><article class="info-card area-card"><h3>Desarrollo económico</h3><p>Orienta la formación y la gestión tecnológica hacia productividad, emprendimiento, empleo pertinente, cierre de brechas y fortalecimiento de capacidades regionales.</p></article><article class="info-card area-card"><h3>Industria 4.0</h3><p>Actúa como línea transversal para automatización, analítica, inteligencia artificial, IoT, trazabilidad, integración de datos y transformación digital de procesos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell soft-section">
+      <div class="container two-col">
+        <div>
+          <div class="section-heading">
+            <span class="section-kicker">Lectura estratégica</span>
+            <h2>Alcances de los direccionadores</h2>
+            <p>Más que líneas temáticas aisladas, los direccionadores operan como una red articulada para orientar formación, innovación, transferencia tecnológica y relación con el territorio.</p>
+          </div>
+          <ul class="checklist">
+            <li><strong>Biotecnología:</strong> consolidar bioprocesos, servicios tecnológicos, calidad, bioeconomía y articulación con cadenas productivas.</li>
+            <li><strong>Seguridad alimentaria:</strong> fortalecer disponibilidad, acceso, inocuidad, nutrición y sostenibilidad en sistemas alimentarios.</li>
+            <li><strong>Desarrollo económico:</strong> impulsar competitividad regional, productividad, articulación sectorial y nuevas oportunidades formativas.</li>
+            <li><strong>Industria 4.0:</strong> transversalizar automatización, inteligencia artificial, IoT, trazabilidad y análisis de datos.</li>
+          </ul>
+        </div>
+        <aside class="info-card">
+          <img src="assets/talento-dialogo.png" alt="Aprendiz del CBI en pose de presentación" style="width:100%;border-radius:18px;margin-bottom:18px;">
+          <h3>Propósito transversal</h3>
+          <p>Formación, innovación y transferencia tecnológica convergen para responder a las necesidades de las cadenas productivas, fortalecer el talento humano y ampliar las oportunidades del territorio.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section-shell" id="tendencias">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Demanda futura</span>
+          <h2>Tendencias que configurarán la demanda 2026–2035</h2>
+          <p>Las transformaciones tecnológicas, productivas y regulatorias incrementarán el valor de nuevas competencias en logística, industria, biotecnología, servicios y sostenibilidad.</p>
+        </div>
+        <div class="trend-list">
+          <article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Logística 4.0</h3><p>Integración de WMS/TMS, RFID, IoT, analítica, IA y automatización para reducir tiempos, errores e inventarios.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Mantenimiento predictivo</h3><p>Sensores, análisis de condición, vibraciones, termografía, datos y gemelos digitales desplazan el mantenimiento puramente reactivo.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Software y automatización</h3><p>Crece el valor de IA aplicada, analítica, ciberseguridad OT/IoT e integración de datos para la toma de decisiones.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Biotecnología y agroindustria</h3><p>Aumenta la relevancia de cadena de frío, calidad, bioproductos, bioeconomía y conexión con mercados y exportación.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Gestión ambiental</h3><p>La descarbonización, la eficiencia, la logística verde y la economía circular se vuelven competencias de alto valor.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Electromovilidad</h3><p>Se fortalecen capacidades para automotor y equipos de apoyo terrestre, con énfasis en actualización tecnológica.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Comercio exterior digital</h3><p>La operación aduanera digital y el cumplimiento normativo ganan importancia en la gestión de cadenas globales.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Bilingüismo técnico</h3><p>El inglés técnico para contextos aeroportuarios, logísticos y tecnológicos se consolida como base estratégica.</p></article><article class="trend-item dashboard-card"><span class="eyebrow">Tendencia</span><h3>Aeronáutica regulada</h3><p>Campo emergente que exige alianzas y abordaje gradual; no conviene improvisar donde aún no existe fortaleza instalada.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell soft-section" id="proyeccion">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-kicker">Capacidades y foco</span>
+          <h2>Proyección CBI</h2>
+          <p>Las capacidades actuales del CBI permiten identificar fortalezas, campos diferenciales y áreas que requieren actualización, especialización o desarrollo mediante alianzas.</p>
+        </div>
+        <div style="overflow-x:auto">
+          <table class="matrix" aria-label="Matriz de proyección CBI">
+            <thead>
+              <tr>
+                <th>Línea</th>
+                <th>Nivel actual</th>
+                <th>Competencias que ganan valor</th>
+                <th>Orientación estratégica</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Gestión logística / producción</td><td>Fuerte</td><td>Logística 4.0, WMS/TMS, trazabilidad avanzada, operación aeroportuaria.</td><td>Actualizar y pilotear</td></tr><tr><td>Mantenimiento industrial / electrónico</td><td>Fuerte</td><td>Predictivo, IoT industrial, gestión de activos, digital twins.</td><td>Especializar</td></tr><tr><td>Software y automatización</td><td>Fuerte</td><td>IA aplicada, analítica, ciberseguridad OT/IoT, integración de datos.</td><td>Escalar e integrar programas</td></tr><tr><td>Biotecnología / agroindustria</td><td>Diferencial</td><td>Cadena de frío, calidad, bioproductos, bioeconomía logística.</td><td>Conectar con exportación</td></tr><tr><td>Gestión ambiental</td><td>Fuerte</td><td>Descarbonización, eficiencia, logística verde, economía circular.</td><td>Especializar</td></tr><tr><td>Automotor</td><td>Media-fuerte</td><td>Electromovilidad y equipos de apoyo terrestre.</td><td>Actualizar</td></tr><tr><td>Comercio exterior</td><td>Base/proyectada</td><td>Operación aduanera digital y cumplimiento normativo DIAN.</td><td>Reactivar/validar</td></tr><tr><td>Bilingüismo</td><td>Base estratégica</td><td>Inglés técnico aeroportuario/logístico.</td><td>Priorizar</td></tr><tr><td>Aeronáutica regulada</td><td>No es fortaleza actual</td><td>Mantenimiento de aeronaves y operaciones reguladas.</td><td>Aliar, no improvisar</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell" id="ruta">
+      <div class="container two-col">
+        <div>
+          <div class="section-heading">
+            <span class="section-kicker">Hoja de ruta</span>
+            <h2>¿Qué necesitamos para avanzar?</h2>
+            <p>La consolidación de capacidades institucionales exige decisiones articuladas en oferta de formación, talento humano, infraestructura, metodología y relacionamiento territorial.</p>
+          </div>
+          <ul class="checklist">
+            <li>Nuevos programas de formación alineados con los direccionadores y la visión Palmira 2050.</li><li>Actualización de infraestructura física y tecnológica.</li><li>Modernización de ambientes de aprendizaje.</li><li>Revisión de programas de formación a desestimar o reorientar.</li><li>Revisión y fortalecimiento de perfiles de instructores.</li><li>Metodologías de enseñanza acordes con las nuevas generaciones.</li><li>Ajuste de estrategias pedagógicas: didácticas activas, coplaneación y articulación entre programas.</li><li>Alianzas interinstitucionales para ampliar capacidades.</li><li>Mayor presencia en el territorio para construir con el territorio.</li><li>Alineación de la visión institucional con la realidad regional.</li>
+          </ul>
+        </div>
+        <aside class="info-card">
+          <img src="assets/talento-presentacion.png" alt="Aprendiz del CBI en pose de orientación" style="width:100%;border-radius:18px;margin-bottom:18px;">
+          <h3>Propuestas de transformación de infraestructura</h3>
+          <ul class="checklist">
+            <li><strong>Ambientes flexibles:</strong> Laboratorios, talleres y zonas de experimentación capaces de adaptarse a retos productivos cambiantes.</li><li><strong>Infraestructura biotecnológica:</strong> Fortalecer la biotecnología como apuesta estratégica del Centro para el desarrollo de Palmira 2050.</li><li><strong>Tecnología digital:</strong> Integrar automatización, analítica, trazabilidad y sistemas inteligentes en ambientes de formación.</li><li><strong>Convergencia sectorial:</strong> Diseñar espacios que articulen logística, agroindustria, sostenibilidad y servicios tecnológicos.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+
+    <section class="section-shell future-section" id="futuro" aria-labelledby="futuro-title">
+      <div class="container">
+        <div class="future-intro">
+          <span class="section-kicker">Proyección de infraestructura</span>
+          <h2 id="futuro-title">A futuro</h2>
+          <p>En el Centro de Biotecnología Industrial se plantea la construcción del &quot;Complejo integrado de biotecnología&quot; el cual incluye, además, <strong>BIOFARMACÉUTICA.</strong></p>
+        </div>
+        <figure class="future-figure future-figure--main">
+          <div class="future-image-frame">
+            <img src="assets/complejo-integrado-biotecnologia.png"
+                 alt="Propuesta de distribución del Complejo Integrado de Biotecnología del SENA, con áreas exteriores, laboratorios, aulas y servicios"
+                 width="747" height="351" loading="lazy" decoding="async">
+          </div>
+          <figcaption>Complejo integrado de biotecnología · Vista general</figcaption>
+        </figure>
+        <div class="future-detail-grid">
+          <figure class="future-figure">
+            <div class="future-image-frame future-image-frame--exterior">
+              <img src="assets/areas-exteriores-tecnologicas.png"
+                   alt="Áreas exteriores tecnológicas: casa malla, fermentadores, lombricompostaje, biodigestor, estación meteorológica, huerta y plantas aromáticas"
+                   width="548" height="135" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Áreas exteriores tecnológicas</figcaption>
+          </figure>
+          <figure class="future-figure">
+            <div class="future-image-frame future-image-frame--terraza">
+              <img src="assets/terraza-equipamiento-piloto.png"
+                   alt="Terraza de uso tecnológico y equipamiento piloto para actividades vegetales, ambientales, de bioenergía y agroalimentarias"
+                   width="325" height="353" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Terraza y equipamiento piloto</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell soft-section" id="memorias">
+      <div class="container two-col">
+        <div class="info-card">
+          <span class="section-kicker">Diagnóstico actual</span>
+          <h2 style="font-size:clamp(2rem,3.7vw,3rem)">¿Qué tan preparado está hoy el CBI?</h2>
+          <ul class="checklist">
+            <li>El CBI cuenta con fortalezas instaladas en logística, mantenimiento, software/automatización, gestión ambiental y biotecnología/agroindustria.</li><li>La biotecnología aparece como factor diferencial, no solo como línea técnica sino como plataforma de articulación con bioeconomía y territorio.</li><li>Existen capacidades base o proyectadas que requieren validación y consolidación, especialmente en comercio exterior y bilingüismo técnico.</li><li>En áreas altamente reguladas, como aeronáutica, la recomendación es avanzar mediante alianzas y no mediante expansión improvisada.</li>
+          </ul>
+        </div>
+        <div class="info-card">
+          <img src="assets/talento-conexion.png" alt="Aprendiz del CBI en pose de conexión" style="width:100%;border-radius:18px;margin-bottom:18px;">
+          <h3>Memorias de prospectiva</h3>
+          <p>Consulte las memorias de la prospectiva del CBI, con los antecedentes, direccionadores estratégicos, tendencias de demanda y propuestas de transformación.</p>
+          <div class="source-box">
+            <div>
+              <strong>Prospectiva CBI</strong>
+              <p style="margin:8px 0 0">Descargar presentación</p>
+            </div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a class="btn-inline" href="assets/Prospectiva_CBI_2036.pdf" download>Descargar presentación</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Prospectiva Centro de Biotecnología Industrial - SENA Palmira</strong>
+        <p>Formación profesional integral, innovación y transferencia tecnológica orientadas al desarrollo económico, social y ambiental del territorio.</p>
+      </div>
+      <div>
+        <strong>Créditos</strong>
+        <p>Centro de Biotecnología Industrial · SENA Regional Valle · Palmira, Colombia.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
